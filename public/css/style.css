@@ -47,21 +47,33 @@ header a {
     margin-right: 16px;
 }
 
-input:focus {outline:none;}
+input, button:focus {outline:none;}
 
 input {
     border-radius: 10px;
     border: 1px solid #cccccc;
-    padding: 8px 50px;
+    width: 200px;
+    height: 25px;
+}
+
+input,
+input::-webkit-input-placeholder {
+    font-size: 16px;
+    line-height: 3;
 }
 
 button {
-    background-color: #00ff00;
+    background-color: #06a94d;
+    color: #ffffff;
     cursor: pointer;
     font-size: 16px;
     border-radius: 20px;
     padding: 5px 15px;
     border: none;
+}
+
+form{
+    text-align: center;
 }
 
  #map {
