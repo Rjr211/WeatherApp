@@ -3,7 +3,7 @@ const express = require('express')
 const hbs = require('hbs')
 const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
-
+require("dotenv").config();
 
 //Call express
 const app = express() 
@@ -12,6 +12,8 @@ const publicDirectoryPath = path.join(__dirname, '../public')
 //Customize views path
 const viewsPath = path.join(__dirname, '../templates/views')
 const partialsPath = path.join(__dirname, '../templates/partials')
+const port = process.env.PORT || 3000;
+
 
 //app.set -> a value for a given express setting
 //setup handlebars engine and views location 
