@@ -1,3 +1,8 @@
+html
+{
+  -webkit-tap-highlight-color:transparent;
+}
+
 img{
     width: 300px;
 }
@@ -40,3 +45,28 @@ header a {
     color: #888888;
     margin-right: 16px;
 }
+
+input:focus {outline:none;}
+
+input {
+    border-radius: 20px;
+    border: 1px solid #cccccc;
+    padding: 8px;
+}
+
+button {
+    color: #cccccc;
+    cursor: pointer;
+}
+
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+       #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 25%;
+        margin: 0;
+        padding: 0;
+      }

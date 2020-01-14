@@ -26,11 +26,24 @@ weatherForm.addEventListener('submit', (e) => {
                 messageOne.textContent = data.location
                 messageTwo.style.color = 'green'
                 messageTwo.textContent = data.forecast
+                initMap(data.lat, data.long)
             }
             
         })
+
+        function initMap(lat, long) {
+            // The location of Uluru
+            var uluru = {lat: lat, lng: long};
+            // The map, centered at Uluru
+            var map = new google.maps.Map(
+                document.getElementById('map'), {zoom: 6, center: uluru});
+            // The marker, positioned at Uluru
+            var marker = new google.maps.Marker({position: uluru, map: map});
+          }
 
 })
 
     console.log(location)
 }) 
+
+
