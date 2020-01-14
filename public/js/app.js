@@ -32,13 +32,10 @@ weatherForm.addEventListener('submit', (e) => {
         })
 
         function initMap(lat, long) {
-            // The location of Uluru
-            var uluru = {lat: lat, lng: long};
-            // The map, centered at Uluru
+            var googleLocation = {lat: lat, lng: long};
             var map = new google.maps.Map(
-                document.getElementById('map'), {zoom: 6, center: uluru});
-            // The marker, positioned at Uluru
-            var marker = new google.maps.Marker({position: uluru, map: map});
+                document.getElementById('map'), {zoom: 7, center: googleLocation});
+            var marker = new google.maps.Marker({position: googleLocation, map: map});
           }
 
 })
