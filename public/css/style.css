@@ -5,6 +5,9 @@ html
 
 img{
     width: 300px;
+    display: block;
+    margin: auto;
+    
 }
 
 body{
@@ -89,4 +92,14 @@ form{
 
 #instruction-message{
     text-align: center;
+}
+
+#description{
+    float: right;
+    margin-top: 10px;
+}
+
+
+#description{
+    margin-top: 60px;
 }
